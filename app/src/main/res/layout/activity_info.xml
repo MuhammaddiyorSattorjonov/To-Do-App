@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:id="@+id/description"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree"
+            android:id="@+id/degree"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create deadline"
+            android:id="@+id/createDead"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline"
+            android:id="@+id/deadline"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="OPEN"
+                    android:id="@+id/open"
+                    android:layout_height="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="DEVELOPMENT"
+                    android:id="@+id/development"
+                    android:layout_height="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Uploading"
+                    android:text="Uploading"
+                    android:layout_height="50dp"/>
+                <RadioButton
+                    android:text="Reject"
+                    android:id="@+id/Reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+                <RadioButton
+                    android:text="Close"
+                    android:id="@+id/Close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+            </RadioGroup>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1.1">
+        <Button
+            android:text="OK"
+            android:backgroundTint="#03A9F4"
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
